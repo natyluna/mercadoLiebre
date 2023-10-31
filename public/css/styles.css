@@ -1,0 +1,167 @@
+/*=== Selector universal===*/
+*{
+    margin: 0px;
+    padding: 0px;    
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+
+header{
+    background-color: #EAC926;
+}
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+/*=== Aquí se debe disponer el CSS para el div.top-header=== */
+
+
+
+header div.logo,
+header .form{
+    width: 50%;
+}
+
+header div.logo{
+    padding: 10px;
+}
+/*=== Aquí debemos colocar el CSS para el header .form===*/
+
+
+header nav{
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+/*=== Aquí colocamos el CSS para div.last-visit , div.offers===*/
+
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+/*=== Aquí debemos colocar el CSS para el main section article i===*/
+
+
+main section h3{
+    margin: 20px 0px;
+}
+
+/*=== APlicar CSS al article div.main-article ===*/
+
+
+@media (min-width: 361px){
+    /*=== Hacer visible main section article .descripcion===*/
+    
+    
+    /*=== colocar sombra al main section article===*/    
+    
+
+    /*=== Aplicar CSS al main section div.products===*/
+    
+    /*=== Aplicar CSS al main section div.products article===*/
+    
+    /*=== Aplicar CSS al .price, .discont===*/
+    
+}
+
+@media (min-width: 769px){
+   /*=== Aplicar CSS al ain section div.products article===*/ 
+        
+
+}
