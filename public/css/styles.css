@@ -1,4 +1,4 @@
-/*=== Selector universal===*/
+
 *{
     margin: 0px;
     padding: 0px;    
@@ -25,8 +25,6 @@ header div.top-header p{
     text-align: center;
     margin-top: 10px;
 }
-/*=== Aquí se debe disponer el CSS para el div.top-header=== */
-
 
 
 header div.logo,
@@ -34,11 +32,12 @@ header .form{
     width: 50%;
 }
 
+header .form button {
+    margin-left: 20px;
+}
 header div.logo{
     padding: 10px;
 }
-/*=== Aquí debemos colocar el CSS para el header .form===*/
-
 
 header nav{
     font-size: 12px;
@@ -60,6 +59,7 @@ header .form .input{
     outline: none;
     color: #666;
     padding: 2px;
+    margin-left: 20px;
 }
 
 header .form .submit{
@@ -70,47 +70,46 @@ header .form .submit{
 }
 
 div.burger-menu{
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 
 div.burger-menu i{
-    background-color: #d86abc;
+    background-color: #1259c3;
     border-radius: 5px;
     color: #FFF;
     font-size: 20px;
-    height: 40px;
     margin: 10px 0px 20px 0px;
     padding: 10px;
-    width: 40px;
+    width: 24px;
 }
 
-/*=== Aquí colocamos el CSS para div.last-visit , div.offers===*/
-
-
-.price{
+.precios{
     font-size: 18px;
     width: 30%;
 }
 
-.discount{
+.descuentos{
     width: 70%;
 }
 
-.discount,
-.description{
+.descuentos,
+.descripciones{
     font-size: 16px;
     font-weight: normal;
 }
 
 h3,
-.description{
+.descripciones{
     color: #666;
 }
 
-.description{
+/*para que no se visualice en mobile*/
+.descripciones{
     display: none;
     margin-top: 20px;
-}
+} 
 
 section.banner img{
     width: 100%;
@@ -124,6 +123,8 @@ main{
 main section article{
     background-color: #fff;    
     margin: 10px 0px;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
 }
 
 main section article img{
@@ -131,37 +132,71 @@ main section article img{
 }
 
 main section article i,
-.discount{
+.descuentos{
     color: #39b54a;
 }
 
-/*=== Aquí debemos colocar el CSS para el main section article i===*/
+footer section{
+    text-align: center;
+    margin: 30px ;
+}
+footer section i{
+    font-size: 2em;
+    color: #1259c3;
+    margin-bottom: 10px;
+}
+footer h3{
+    font-size: 24px;
+}
+footer p{
+    font-size: 16px;
+}
 
 
 main section h3{
     margin: 20px 0px;
 }
-
-/*=== APlicar CSS al article div.main-article ===*/
-
-
-@media (min-width: 361px){
-    /*=== Hacer visible main section article .descripcion===*/
-    
-    
-    /*=== colocar sombra al main section article===*/    
-    
-
-    /*=== Aplicar CSS al main section div.products===*/
-    
-    /*=== Aplicar CSS al main section div.products article===*/
-    
-    /*=== Aplicar CSS al .price, .discont===*/
-    
+.site{
+    display: none;
 }
 
-@media (min-width: 769px){
-   /*=== Aplicar CSS al ain section div.products article===*/ 
-        
 
+/*TABLET */
+@media (min-width: 361px){
+    /*=== Hacer visible main section article .descripcion===*/
+    .descripciones{
+        display: inline-block;
+        margin-top: 20px;
+    }
+      
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .site{
+        display: inline-block;
+    }
+   
+    .burger-menu i{
+        display: none;
+    }
+    
+}
+/*  DESKTOP */
+@media (min-width: 769px){
+   
+   .descripciones{
+        display: inline-block;
+        margin-top: 20px;
+    }    
+
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .site{
+        display: inline-block;
+    }
+    .burger-menu i{
+        display: none;
+    }
 }
