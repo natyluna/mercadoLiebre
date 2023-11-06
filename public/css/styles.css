@@ -2,6 +2,7 @@
 *{
     margin: 0px;
     padding: 0px;    
+    box-sizing: border-box;
 }
 
 body{
@@ -60,6 +61,7 @@ header .form .input{
     color: #666;
     padding: 2px;
     margin-left: 20px;
+    display: inline-block;
 }
 
 header .form .submit{
@@ -119,6 +121,12 @@ main{
     width: 90%;
     margin: 0 auto;
 }
+/*.main-header{
+    position: fixed;
+    top:0;
+    //agregarle el padding top a lo q este abajo
+}
+*/
 
 main section article{
     background-color: #fff;    
@@ -161,8 +169,26 @@ main section h3{
 }
 
 
+
+/*VERRRRRRRRRRRRRRRRRR*/
+.descuentos > .main-article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+.descuentos{
+    position: relative;
+}
 /*TABLET */
-@media (min-width: 361px){
+@media (min-width: 768px){
     /*=== Hacer visible main section article .descripcion===*/
     .descripciones{
         display: inline-block;
@@ -199,4 +225,52 @@ main section h3{
     .burger-menu i{
         display: none;
     }
+
+   
+}
+
+/*=====FORMULARIO REGISTRO========*/
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #b3b3b3;
+    margin-top: 2rem;
+    padding: 1rem;
+    margin-bottom: 5rem;
+}
+
+form input[type="text"], input[type="password"], input[type="email"], input[type="date"] {
+    border-radius: 5px;
+    margin: 0.5rem;
+    height: 2rem;
+    border: 1px;
+}
+
+form label, .userPerfil , .userInteres, .userFoto{
+    margin:0.5rem;
+}
+
+form h4{
+    margin-bottom: 0.5rem;
+}
+
+.userFoto{
+    display: flex;
+    flex-direction: column;
+}
+
+form button{
+    height: 2rem;
+    width: 45%;
+    background-color: #1259c3;
+    border: none;
+    border-radius: 5px;
+    color:#fff;
+    margin-right: 5px;
+    margin-top: 2rem;
+}
+
+.acciones{
+    margin-left: 0.5rem;
+    display: inline-block;
 }

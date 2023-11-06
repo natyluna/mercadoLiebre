@@ -48,14 +48,14 @@
                     <label for="">Fecha de Nacimiento</label>
                     <input type="date" name="fechaNac" >
                     <input type="text" name="domicilio" placeholder="Domicilio">
-                    <div>
+                    <div class="userPerfil">
                         <h4>Perfil del Usuario</h4>
                         <label for="perfil">Comprador</label>
                         <input type="radio" name="perfil" value="comprador">
                         <label for="perfil">Vendedor</label>
                         <input type="radio" name="perfil" value="vendedor">
                     </div>
-                    <div>
+                    <div class="userInteres">
                         <h4>Intereses</h4>
                         <div>
                             <input type="checkbox" name="interes" value="electro">
@@ -79,11 +79,17 @@
                         </div>
                         
                     </div>
-                    <input type="file" name="user" >
+                    <div class="userFoto">
+                        <h4>Foto de Usuario</h4>
+                        <input type="file" name="user" >
+                    </div>
+                    
                     <input type="password" name="password" placeholder="Contraseña">
                     <input type="password" name="passwordConfirmacion" placeholder="Confirmar contraseña">
-                    <button type="submit" >Enviar</button>
-                    <button type="reset">Borrar</button>
+                    <div class="acciones">
+                        <button type="submit" >Enviar</button>
+                        <button type="reset">Borrar</button>
+                    </div>
                 </form>
         </main>
         <footer>
