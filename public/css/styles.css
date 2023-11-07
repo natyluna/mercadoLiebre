@@ -16,6 +16,7 @@ h3{
 
 p{
     font-size: 12px;
+    text-align: center;
 }
 
 header{
@@ -33,9 +34,9 @@ header .form{
     width: 50%;
 }
 
-header .form button {
+/* header .form button {
     margin-left: 20px;
-}
+} */
 header div.logo{
     padding: 10px;
 }
@@ -56,12 +57,14 @@ header ul li a{
 
 header .form .input{
     background-color: #FFF;
-    border: 1px solid #000;
+    border: 1px solid #666;
     outline: none;
     color: #666;
     padding: 2px;
     margin-left: 20px;
     display: inline-block;
+    height: 2.5rem;
+    border-radius: 5px;
 }
 
 header .form .submit{
@@ -84,7 +87,7 @@ div.burger-menu i{
     font-size: 20px;
     margin: 10px 0px 20px 0px;
     padding: 10px;
-    width: 24px;
+    width: 45px;
 }
 
 .precios{
@@ -120,6 +123,26 @@ section.banner img{
 main{
     width: 90%;
     margin: 0 auto;
+}
+
+.top-header {
+    display: flex;
+    padding: 1rem;
+}
+.top-header .logo{
+    width: 50%;
+}
+.top-header .form{
+    width: 50%;
+}
+.form{
+    display: flex;
+}
+.form .lupa{
+    width: 2rem;
+    height: 2.5rem;
+    border: 1px solid #666;
+    border-radius: 5px;
 }
 /*.main-header{
     position: fixed;
@@ -170,8 +193,8 @@ main section h3{
 
 
 
-/*VERRRRRRRRRRRRRRRRRR*/
-.descuentos > .main-article i{
+/*pdf 20*/
+.main-article > i{
     display: block;
     font-size: 16px;
     padding: 5px;
@@ -184,8 +207,30 @@ main section h3{
     right: 20px;
     top: -15px;
 }
-.descuentos{
+.main-article{
     position: relative;
+}
+
+.productoInfo{
+    display: flex;
+}
+.productoInfo .precios{
+    width: 30%;
+    padding-top: 2rem;
+}
+.productoInfo .descuentos{
+    width: 70%;
+    padding-top: 2rem;
+}
+
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+}
+.products article{
+    width: 100%;
+
 }
 /*TABLET */
 @media (min-width: 768px){
@@ -206,7 +251,17 @@ main section h3{
     .burger-menu i{
         display: none;
     }
+    .products{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .products article{
+        width: 48%;
+    }
+
     
+
 }
 /*  DESKTOP */
 @media (min-width: 769px){
@@ -222,21 +277,52 @@ main section h3{
     .site{
         display: inline-block;
     }
+    .logo img{
+        width: 50%;
+    }
     .burger-menu i{
         display: none;
     }
 
-   
+    .products{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    .products article{
+        width: 24%;
+    }
+
+  
+ 
+    .productoInfo{
+        display: flex;
+    }
+    .productoInfo .precios{
+        width: 30%;
+        padding-top: 2rem;
+        font-size: 12px;
+        
+    }
+    .productoInfo p{
+        display: contents;
+    }
+    .productoInfo .descuentos{
+        width: 70%;
+        padding-top: 2rem;
+        font-size: 12px;
+    }
 }
 
 /*=====FORMULARIO REGISTRO========*/
 form {
     display: flex;
     flex-direction: column;
-    background-color: #b3b3b3;
+    background-color: #dbdbdb;
     margin-top: 2rem;
     padding: 1rem;
     margin-bottom: 5rem;
+    border-radius: 5px;
 }
 
 form input[type="text"], input[type="password"], input[type="email"], input[type="date"] {
